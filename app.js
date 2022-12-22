@@ -1,12 +1,12 @@
-function multipicationNumber(numero) {
-  let resultado = `Result for multiplication from: ${numero}`;
+function palindromeWord(word) {
+  let original = word;
+  let revWord = word.split('').reverse().join('');
 
-  console.log(resultado);
-  for (let i = 1; i <= 10; i++) {
-    let multiplication = (i*numero);
-    console.log(`${i} x ${numero} = `,multiplication);
+  if(original === revWord){
+    console.log(`True: ${word} is the same as ${revWord}`);
+  }else{
+    console.log(`False: ${word} is different from ${revWord}`);
   }
-
 }
 
-multipicationNumber(9);
+palindromeWord('anitalavalatina');
